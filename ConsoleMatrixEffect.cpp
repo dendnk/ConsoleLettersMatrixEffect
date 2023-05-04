@@ -60,7 +60,7 @@ int main()
 
         // Draw the letters on the screen
         for (int i = 0; i < NUM_LETTERS; i++) {
-            gotoxy(i * 2, yCoords[i]);
+            gotoxy(i, yCoords[i]);
             cout << letters[i];
         }
 
