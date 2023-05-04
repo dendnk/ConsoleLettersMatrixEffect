@@ -15,8 +15,8 @@ void gotoxy(int x, int y) {
 
 int main()
 {
-    const int WIDTH = 60;
-    const int HEIGHT = 25;
+    const int WIDTH = 100;
+    const int HEIGHT = 30;
     const int NUM_LETTERS = WIDTH;
     const int MAX_VELOCITY = 1;
 
@@ -63,6 +63,9 @@ int main()
             gotoxy(i, yCoords[i]);
             cout << letters[i];
         }
+
+        // Fix moving caret
+        gotoxy(0, HEIGHT);
 
         // Wait for a short time before updating the screen again
         Sleep(50);
